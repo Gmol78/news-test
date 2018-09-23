@@ -1,0 +1,202 @@
+
+
+/*********
+1. Общие стили
+*/
+
+body {
+    background-color: #ECEEEA;
+}
+
+
+/*
+2. Блоки
+*******************************/
+
+/**********
+Базовый загловок
+*/
+
+.header-base {
+    font-size: 30px;
+    line-height: 33px;
+    border-bottom: 1px dotted #7F2A58;
+    letter-spacing: 0.05rem;
+}
+
+/**********
+Адаптивный контейнер секции
+*/
+.section-container {
+    background-color: #FDFEFB;
+    max-width: 1005px;
+    margin-left: 57px;
+    margin-right: auto;
+    padding: 20px 10px;
+    border: 1px solid #C9CBC8;
+
+}
+
+@media screen and (max-width: 1135px) {
+    .section-container {
+        max-width: none;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/*********
+Блок списка новостей
+*/
+.list-news {
+    list-style-type: none;
+    padding-left: 0;
+    border-bottom: 1px dotted #7F2A58;
+    margin-bottom: 0;
+}
+
+.list-news__item {
+    margin: 13px 0;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.list-news__item-header {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.list-news__date {
+    background-color: #7F2A58;
+    color: #FFF;
+    padding: 0 4px;
+    letter-spacing: 0.02rem;
+    margin-right: 5px;
+}
+
+.list-news__title {
+    color: #0006F1;
+    text-decoration: underline;
+    letter-spacing: 0.07rem;
+}
+
+.list-news__announce {
+    margin-top: 5px;
+}
+
+
+@media screen and (max-width: 870px) {
+    .list-news__item-header {
+        flex-direction: column;
+        align-items: start;
+    }
+
+}
+
+/*********
+Блок пагинации
+*/
+
+.pagination {
+}
+
+.pagination__title {
+    font-size: 14px;
+    letter-spacing: 0.02rem;
+
+}
+
+.pagination__pages-list {
+    font-size: 0;
+}
+
+.pagination__page-link {
+    color: #111;
+    font-size: 14px;
+    line-height: 14px;
+    display: inline-block;
+    background-color: #ECEEEA;
+    border: 1px solid #C9CBC8;
+    width: 33px;
+    text-align: center;
+    margin-right: 2px;
+    margin-bottom: 2px;
+}
+
+.pagination__page-link_active {
+    background-color: #7F2A58;
+    color: #FFF;
+}
+
+.pagination__page-link:hover {
+    background-color: #7F2A58;
+    color: #FFF;
+    text-decoration: none;
+}
+
+
+
+/*
+3. Секции
+*******************************/
+
+
+/********
+Секция списка новостей
+*/
+
+.list-news-section {
+    background-color: #ECEEEA;
+    padding-top: 25px;
+    padding-bottom: 70px;
+}
+
+.list-news-section__container {
+}
+
+.list-news-section__header {
+}
+
+.list-news-section__list {
+    margin-top: 25px;
+}
+
+.list-news-section__pagination {
+    margin-top: 10px;
+}
+
+/********
+Секция одтельной новости
+*/
+
+.single {
+    background-color: #ECEEEA;
+    padding-top: 25px;
+    padding-bottom: 70px;
+}
+
+.single__container {
+}
+
+.single__header {
+}
+
+.single__content {
+    margin-top: 20px;
+    font-size: 14px;
+    border-bottom: 1px dotted #7F2A58;
+}
+
+.single__link-container {
+    margin-top: 8px;
+}
+
+.single__link {
+    font-size: 18px;
+    text-decoration: underline;
+}
+
